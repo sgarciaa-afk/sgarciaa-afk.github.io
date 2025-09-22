@@ -1,0 +1,55 @@
+body {
+font-size: 14pt;
+font-family: 'Courier New';
+margin: 1cm;
+border: 1pt;
+    border-style: double;
+    border-color: blue;
+}
+
+tei-del {
+    text-decoration: line-through;
+    color: blueviolet;
+    display: none;
+}
+
+tei-seg {
+    text-decoration: none;
+    color: green;
+    display: block;
+}
+
+tei-caesura {
+    text-decoration: line-through;
+    color: green;
+    display: none;
+}
+
+tei-choice {
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+tei-abbr {
+    text-decoration: overline;
+    display: none;
+}
+
+tei-expand {
+    text-decoration: overline;
+    color: brown;
+    display: none;
+}
+
+tei-orig {
+    text-decoration: overline;
+    color: brown;
+    display: none;
+
+}
+
+tei-l::before {
+    content: attr(n);
+    font-size: x-small;
+    color: green;
+}
